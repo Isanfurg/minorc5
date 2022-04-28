@@ -4,3 +4,4 @@ Para replicar el ambiente de desarrollo es necesario:
 
 - Visual Studio Code
 - Android Studio
+![](http://i.imgur.com/60bts.gif)
