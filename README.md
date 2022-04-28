@@ -1,4 +1,6 @@
 # minorc5
+#Descripcion
+
 Proyecto de Ingenieria Civil en computacion.
 Para replicar el ambiente de desarrollo es necesario:
 
