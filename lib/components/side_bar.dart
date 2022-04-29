@@ -26,9 +26,15 @@ class Header extends StatelessWidget {
       child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+            SizedBox(height: 15),
             ListTile(
-              leading: const Icon(Icons.home_outlined),
-              title: const Text('Que deseas hacer?'),
+              title: const Text(
+                '¿Que deseas hacer?',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               onTap: () {},
             )
           ]),
