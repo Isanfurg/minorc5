@@ -4,47 +4,53 @@ class SideBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      child: SingleChildScrollView(
-        child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              SizedBox(
-                width: 40,
+      child: ListView(
+        padding: EdgeInsets.zero,
+        children: const <Widget>[
+          DrawerHeader(
+            decoration: BoxDecoration(
+              color: Colors.blue,
+            ),
+            child: Text(
+              'Drawer Header',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 24,
               ),
-              Header(),
-              Items(),
-            ]),
+            ),
+          ),
+          ListTile(
+            leading: Icon(Icons.fmd_bad_outlined),
+            title: Text('Anuncios'),
+          ),
+          ListTile(
+            leading: Icon(Icons.report_gmailerrorred),
+            title: Text('Reportes'),
+          ),
+          ListTile(
+            leading: Icon(Icons.settings),
+            title: Text('Configuracion'),
+          ),
+          ListTile(
+            leading: Icon(Icons.logout_rounded),
+            title: Text('Desconectarse'),
+          ),
+          ElevatedButton(
+            onPressed: null,
+            child: Text(
+              'Conectarse',
+              style: const TextStyle(fontSize: 12, color: Colors.white),
+            ),
+          ),
+          ElevatedButton(
+            onPressed: null,
+            child: Text(
+              'Registrate',
+              style: const TextStyle(fontSize: 12, color: Colors.white),
+            ),
+          ),
+        ],
       ),
     );
-  }
-}
-
-class Header extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            SizedBox(height: 15),
-            ListTile(
-              title: const Text(
-                '¿Que deseas hacer?',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              onTap: () {},
-            )
-          ]),
-    );
-  }
-}
-
-class Items extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
