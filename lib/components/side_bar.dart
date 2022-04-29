@@ -39,14 +39,14 @@ class SideBar extends StatelessWidget {
             onPressed: null,
             child: Text(
               'Conectarse',
-              style: const TextStyle(fontSize: 12, color: Colors.white),
+              style: TextStyle(fontSize: 12, color: Colors.white),
             ),
           ),
           ElevatedButton(
             onPressed: null,
             child: Text(
               'Registrate',
-              style: const TextStyle(fontSize: 12, color: Colors.white),
+              style: TextStyle(fontSize: 12, color: Colors.white),
             ),
           ),
         ],

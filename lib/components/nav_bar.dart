@@ -8,7 +8,7 @@ class NavBar extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           'Bienvenido!',
-          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
         ),
         backgroundColor: Colors.red,
       ),
